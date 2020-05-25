@@ -16,12 +16,12 @@ class Post (models.Model):
     updated_on = models.DateTimeField(auto_now = True)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add = True)
-    status = models.models.IntegerField(choices = STATUS , default = 0)
+    status = models.IntegerField(choices = STATUS , default = 0)
 
     class Meta:
         ordering = ['-created_on']
 
-    def__str__(self):
+    def __str__(self) :
         return self.title
 
 
